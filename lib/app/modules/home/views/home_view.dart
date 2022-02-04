@@ -316,30 +316,30 @@ class HomeView extends GetView<HomeController> {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8),
             child: GNav(
-              rippleColor: Colors.grey[300]!,
-              hoverColor: Colors.grey[100]!,
+              rippleColor: Colors.red[300]!,
+              hoverColor: Colors.red[100]!,
               gap: 8,
-              activeColor: Colors.black,
+              activeColor: Colors.red[400],
               iconSize: 24,
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               duration: Duration(milliseconds: 400),
               tabBackgroundColor: Colors.grey[100]!,
-              color: Colors.black,
+              color: Colors.grey[400],
               tabs: const [
                 GButton(
-                  icon: Icons.home,
+                  icon: Icons.home_outlined,
                   text: 'Home',
                 ),
                 GButton(
-                  icon: Icons.thumb_up,
-                  text: 'Likes',
-                ),
-                GButton(
-                  icon: Icons.search,
+                  icon: Icons.search_outlined,
                   text: 'Search',
                 ),
                 GButton(
-                  icon: Icons.person,
+                  icon: Icons.mail_outlined,
+                  text: 'Message',
+                ),
+                GButton(
+                  icon: Icons.person_outlined,
                   text: 'Profile',
                 ),
               ],
